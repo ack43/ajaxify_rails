@@ -138,7 +138,7 @@ unless $.browser.msie
           $("##{content_container}").html( "<div class='ajaxify_loader'></div>" )
           $('html, body').animate
             scrollTop:0
-            , 500
+            , 0
 
         success: (data, status, jqXHR) ->
           on_ajaxify_success data, status, jqXHR, pop_state, options
